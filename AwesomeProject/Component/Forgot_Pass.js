@@ -11,15 +11,15 @@ export default function Forgot_Pass() {
       <TouchableWithoutFeedback
         onPress={Keyboard.dismiss}
         accessible={false}>
-        <View style={{ flex: 1, backgroundColor: '#141416' }}>
+        <View style={{ flex: 1 }}>
           <View style={{ flex: 1, justifyContent: 'space-around', paddingHorizontal: 15 }}>
-            <Text style={{ fontSize: 25, fontWeight: 'bold', color: 'white' }}>Forgot password?</Text>
+            <Text style={{ fontSize: 25, fontWeight: 'bold' }}>Forgot password?</Text>
             <Text style={{ color: 'grey' }}>Enter email associated with your account and we’ll send and email with intructions to reset your password</Text>
           </View>
           <View style={{ flex: 1, paddingHorizontal: 15, justifyContent: "center" }}>
             <View style={{ flexDirection: 'row', borderBottomColor: '#3B3C41', borderBottomWidth: 1 }}>
               <Ionicons name='mail-outline' style={{ fontSize: 25, color: 'grey', marginRight: 10 }}></Ionicons>
-              <TextInput placeholder={'enter your email here'} placeholderTextColor={'grey'} style={{ color: 'white' }} ></TextInput>
+              <TextInput placeholder={'enter your email here'} placeholderTextColor={'grey'}  ></TextInput>
             </View>
 
           </View>

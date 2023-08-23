@@ -1,5 +1,6 @@
 import Login from './Component/Login';
 import Register from './Component/Register';
+import MyTabs from './Component/MyTabs';
 import Home from './Component/Home';
 import Forgot_Pass from './Component/Forgot_Pass';
 import Verification_Code from './Component/Verification_Code';
@@ -11,8 +12,9 @@ const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
   return (
-    <Stack.Navigator initialRouteName='Home'>
+    <Stack.Navigator initialRouteName='Login'>
       <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+      <Stack.Screen name="MyTabs" component={MyTabs} options={{ headerShown: false }} />
       <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Stack.Screen name="Register" component={Register} options={{ headerShown: false }} />
       <Stack.Screen name="Forgot_Pass" component={Forgot_Pass} options={{

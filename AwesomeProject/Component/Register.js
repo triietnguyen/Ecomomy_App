@@ -31,7 +31,6 @@ const auth = getAuth(app);
 // const analytics = getAnalytics(app);
 
 export default Register = ({ navigation }) => {
-  const [checkboxState, setCheckboxState] = React.useState(true);
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
@@ -88,10 +87,10 @@ export default Register = ({ navigation }) => {
       <TouchableWithoutFeedback
         onPress={Keyboard.dismiss}
         accessible={false}>
-        <View style={{ flex: 1, backgroundColor: '#141416' }}>
+        <View style={{ flex: 1 }}>
           <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'center', marginHorizontal: 20 }}>
-            <Text style={{ color: 'white', fontSize: 25, marginVertical: 10, fontWeight: 'bold' }}>Creat</Text>
-            <Text style={{ color: 'white', fontSize: 25, fontWeight: 'bold' }}>your account</Text>
+            <Text style={{ fontSize: 25, marginVertical: 10, fontWeight: 'bold' }}>Creat</Text>
+            <Text style={{ fontSize: 25, fontWeight: 'bold' }}>your account</Text>
           </View>
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }} >
             {/* Email and PassWord */}
@@ -131,7 +130,7 @@ export default Register = ({ navigation }) => {
                 Already have account?
               </Text>
               <TouchableOpacity style={styles.btn_login} onPress={() => navigation.navigate('Login')}>
-                <Text style={{ color: '#333', fontSize: 15, fontWeight: 'bold', color: 'grey', borderBottomWidth: 1, borderBottomColor: 'red' }}> Sign in</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: 'red' }}> Sign in</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -176,7 +175,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   txt_ip: {
-    color: 'white',
     height: '100%',
     width: '90%',
     paddingRight: 40,

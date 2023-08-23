@@ -48,7 +48,7 @@ export default Login = ({ navigation }) => {
         const user = userCredential.user;
         alert("User Login Successfully");
         console.log("user data,", user);
-        navigation.navigate("Home");
+        navigation.navigate("MyTabs");
         // ...
       })
       .catch((error) => {
@@ -79,11 +79,11 @@ export default Login = ({ navigation }) => {
       <TouchableWithoutFeedback
         onPress={Keyboard.dismiss}
         accessible={false}>
-        <View style={{ flex: 1, backgroundColor: '#141416' }}>
+        <View style={{ flex: 1 }}>
           <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'center', marginHorizontal: 20 }}>
             {/* <Image source={require('../assets/logo.png')} style={styles.img} /> */}
-            <Text style={{ color: 'white', fontSize: 25, marginVertical: 10, fontWeight: 'bold' }}>Log into</Text>
-            <Text style={{ color: 'white', fontSize: 25, fontWeight: 'bold' }}>your account</Text>
+            <Text style={{ fontSize: 25, marginVertical: 10, fontWeight: 'bold' }}>Log into</Text>
+            <Text style={{ fontSize: 25, fontWeight: 'bold' }}>your account</Text>
           </View>
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             {/* Email */}
@@ -143,7 +143,7 @@ export default Login = ({ navigation }) => {
                 Don't have an account?
               </Text>
               <TouchableOpacity style={styles.btn_sign_up} onPress={() => navigation.navigate('Register')}>
-                <Text style={{ color: '#333', fontSize: 15, fontWeight: 'bold', color: 'grey', borderBottomWidth: 1, borderBottomColor: 'red' }}> Sign up</Text>
+                <Text style={{ color: 'red', fontSize: 15, fontWeight: 'bold', borderBottomColor: 'black' }}> Sign up</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -182,7 +182,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   txt_ip: {
-    color: 'white',
     paddingLeft: 10,
     height: '100%',
     width: '90%',
@@ -224,7 +223,8 @@ const styles = StyleSheet.create({
   forget: {
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 10
+    paddingVertical: 10,
+    left: 100
   },
   btn_sign_up: {
     justifyContent: 'center',
