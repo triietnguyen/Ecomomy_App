@@ -17,9 +17,10 @@ const Bottom_Tabs = () => {
       }}
     >
       <Tab.Screen
-        name="Nike Shop"
+        name="Nike Store"
         component={Home}
         options={{
+          headerTitleAlign: 'center',
           headerRight: () => (
             <TouchableOpacity style={{ marginRight: 10 }}>
               <Ionicons name="search-outline" style={{ fontSize: 25 }} />
@@ -35,6 +36,7 @@ const Bottom_Tabs = () => {
         name="Order"
         component={Order}
         options={{
+          headerTitleAlign: 'center',
           tabBarLabel: 'Order',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="cart-outline" color={color} size={size} />
@@ -45,6 +47,7 @@ const Bottom_Tabs = () => {
         name="Notifications"
         component={Notifications}
         options={{
+          headerTitleAlign: 'center',
           tabBarLabel: 'Notifications',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="notifications-outline" color={color} size={size} />
@@ -53,9 +56,10 @@ const Bottom_Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name=" "
         component={Profile}
         options={{
+          headerTitleAlign: 'center',
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="person-outline" color={color} size={size} />

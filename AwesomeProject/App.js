@@ -1,7 +1,6 @@
 import Login from './Component/Login';
 import Register from './Component/Register';
 import MyTabs from './Component/MyTabs';
-import Home from './Component/Home';
 import Forgot_Pass from './Component/Forgot_Pass';
 import Verification_Code from './Component/Verification_Code';
 import Creat_New_Pass from './Component/Creat_New_Pass';
@@ -15,14 +14,11 @@ const MyStack = () => {
     <Stack.Navigator initialRouteName='Login'>
       <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
       <Stack.Screen name="MyTabs" component={MyTabs} options={{ headerShown: false }} />
-      <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Stack.Screen name="Register" component={Register} options={{ headerShown: false }} />
       <Stack.Screen name="Forgot_Pass" component={Forgot_Pass} options={{
-        headerTintColor: '#ffffff',
+        headerTintColor: 'black',
         title: '',
-        headerStyle: {
-          backgroundColor: '#141416',
-        },
+
       }} />
       <Stack.Screen name="Verification_Code" component={Verification_Code} options={{
         headerTintColor: '#ffffff',

@@ -5,7 +5,6 @@ import { Ionicons } from '@expo/vector-icons'
 
 export default function Forgot_Pass() {
 
-
   return (
     <SafeAreaView style={styles.container}>
       <TouchableWithoutFeedback
